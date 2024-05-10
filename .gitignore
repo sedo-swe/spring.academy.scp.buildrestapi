@@ -19,6 +19,30 @@
 *.tar.gz
 *.rar
 
+# Miscellaneous
+*.java.hsp
+*.sonarj
+*.sw*
+.DS_Store
+.idea
+build.sh
+integration-repo
+ivy-cache
+argfile*
+activemq-data/
+classes/
+
+# Gradle artifacts
+.gradle
+.gradletasknamecache
+/build
+buildSrc/build
+/spring-*/build
+/framework-*/build
+/integration-tests/build
+/src/asciidoc/build
+spring-test/test-output/
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
