@@ -26,3 +26,12 @@ from Spring Academy / Spring Certified Professional
       
         cashCard = cashCardRepository.findById(99);
       ```
+
+
+## Module 2
+### Developing a Secure App
+1. Implementing POST
+   * Idempotence and HTTP : For each method, the HTTP standard specifies whether it is idempotent or not. GET, PUT, and DELETE are idempotent, whereas POST and PATCH are not.
+   * The POST Request and Response
+2. Returning a list with GET
+3. Simple Spring Security
