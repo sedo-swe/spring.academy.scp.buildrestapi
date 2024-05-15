@@ -34,4 +34,10 @@ from Spring Academy / Spring Certified Professional
    * Idempotence and HTTP : For each method, the HTTP standard specifies whether it is idempotent or not. GET, PUT, and DELETE are idempotent, whereas POST and PATCH are not.
    * The POST Request and Response
 2. Returning a list with GET
+   * Requesting a List of Cash Cards
+   * Pagination and Sorting
+   * Regarding Unordered Queries
+     - Minimize cognitive overhead: Other developers (not to mention users) will probably appreciate a thoughtful ordering when developing it.
+     - Minimize future errors: What happens when a new version of Spring, or Java, or the database, suddenly causes the “random” order to change overnight?
+
 3. Simple Spring Security
