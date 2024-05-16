@@ -39,5 +39,7 @@ from Spring Academy / Spring Certified Professional
    * Regarding Unordered Queries
      - Minimize cognitive overhead: Other developers (not to mention users) will probably appreciate a thoughtful ordering when developing it.
      - Minimize future errors: What happens when a new version of Spring, or Java, or the database, suddenly causes the “random” order to change overnight?
+   * Test Interaction and @DirtiesContext
+     - @DirtiesContext causes Spring to start with a clean slate, as if those other tests hadn't been run. However, you shouldn't use it indiscriminately; you should have a good reason.
 
 3. Simple Spring Security

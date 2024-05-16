@@ -24,6 +24,8 @@ dependencies {
 	implementation 'com.h2database:h2'
 }
 
+//ext['assertj.version'] = '3.25.1'
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
