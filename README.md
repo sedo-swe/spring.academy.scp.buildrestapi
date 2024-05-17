@@ -43,3 +43,35 @@ from Spring Academy / Spring Certified Professional
      - @DirtiesContext causes Spring to start with a clean slate, as if those other tests hadn't been run. However, you shouldn't use it indiscriminately; you should have a good reason.
 
 3. Simple Spring Security
+   * What Is Security? 
+     - HTTP Authentication and Authorization work
+     - Prevent unauthorized access to our Family Cash Card service.
+   * Authentication
+     - Principal: A user of an API can actually be a person or another program
+     - Authentication is the act of a Principal proving its identity to the system
+     - Authentication Session (or Auth Session, or just Session) 
+     - Session Token (a string of random characters) that is generated, and placed in a Cookie
+   * Spring Security and Authentication
+     - implements authentication in the Filter Chain
+     - a sequence of methods that get called prior to the Controller
+     - Each filter decides whether to allow request processing to continue, or not
+     - Spring Security inserts a filter which checks the user’s authentication and returns with a 401 UNAUTHORIZED response if the request is not authenticated.
+   * Authorization
+     - Authorization happens after authentication, and allows different users of the same system to have different permissions.
+     - Spring Security provides Authorization via Role-Based Access Control (RBAC).
+   * Same Origin Policy
+     - This policy states that only scripts which are contained in a web page are allowed to send requests to the origin (URI) of the web page.
+   * Cross-Origin Resource Sharing (CORS)
+     - a way that browsers and servers can cooperate to relax the SOP
+     - “allowed origins” of requests coming from an origin outside the server’s.
+     - @CrossOrigin
+   * Common Web Exploits
+     * Cross-Site Request Forgery (CSRF), Session Riding
+       + A CSRF Token is different from an Auth Token because a unique token is generated on each request.
+       + --> When should you use CSRF protection? Our recommendation is to use CSRF protection for any request that could be processed by a browser by normal users. If you are only creating a service that is used by non-browser clients, you will likely want to disable CSRF protection.
+     * Cross-Site Scripting (XSS)
+       + This occurs when an attacker is somehow able to “trick” the victim application into executing arbitrary code.
+       + The main way to guard against XSS attacks is to properly process all data from external sources (like web forms and URI query strings).
+
+## Module 3
+### Rounding Out CRUD
