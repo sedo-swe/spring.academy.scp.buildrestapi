@@ -40,7 +40,7 @@ test {
 		showCauses true
 		showStackTraces true
 
-		// Change from false to true
+		// Change to `true` for more verbose test output
 		showStandardStreams = true
 	}
 }
