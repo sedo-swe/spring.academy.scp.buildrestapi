@@ -87,3 +87,18 @@ from Spring Academy / Spring Certified Professional
    * Resources and Sub-Resources
      - URIs and collections of sub-resources
    * Response Body and Status Code
+
+2. Implementing DELETE
+   * Return 204 NO CONTENT or 404 NOT FOUND
+   * Additional Options
+     * Hard and Soft delete
+       * Hard : Remove a record from database
+       * Soft : Mark a record as deleted in database. ex) IS_DELETED (boolean) or DELETED_DATE (date)
+         * Need to refactor Read by filtering out soft deleted records
+     * Audit Trail and Archiving
+
+### Summary
+1. You built the API using a layered architecture. You understand how Spring Security sits at the “front” of the API, Spring Web enables HTTP communications between the API and its clients, and Spring Data handles reading and writing to/from the relational data store.
+2. You used a test-first approach to provide confidence that your application works as designed while driving out your app's functionality.
+3. You drove your implementation using a Steel Thread - exercising all the integration points and validating your architecture early on to de-risk your functionality.
+4. You used the Red, Green, Refactor process to improve your code (and tests!) throughout the application development.
